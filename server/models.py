@@ -10,8 +10,8 @@ def create_llm(model_config=None):
 
     try:
         llm = ChatGroq(
-            api_key=Config.GROQ_API_KEY,      # مفتاح API من Config
-            model_name=model_config.name,      # الاسم الصحيح للنموذج
+            api_key=Config.GROQ_API_KEY,      
+            model_name=model_config.name,       
             temperature=model_config.temperature,
             verbose=False
         )
